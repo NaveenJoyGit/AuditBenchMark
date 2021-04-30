@@ -10,9 +10,11 @@ import com.auditbenchmark.auditbenchmark.repository.benchrepo;
 
 @Service
 public class Benchservice {
-@Autowired
-benchrepo benchrepo;
-public List<Benchmark> getallBenchmarks(){
-	return benchrepo.findAll();
-}
+	
+	@Autowired
+	benchrepo benchrepo;
+
+	public List<Benchmark> getallBenchmarks() {
+		return benchrepo.findAll();
+	}
 }
